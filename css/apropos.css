@@ -1,0 +1,184 @@
+/* ======================================================
+   HERO ABOUT
+   Même échelle que le hero de l'accueil : serif, --fs-h1,
+   et même rythme vertical (catégorie → titre → filet).
+====================================================== */
+
+/* Le titre respire avant le filet "ABOUT", comme .hero-details sur l'accueil */
+.about-title-area {
+    margin-bottom: 60px;
+}
+
+.about-name {
+    font-family: var(--font-serif);
+    font-size: var(--fs-h1);
+    line-height: 1.1;
+    letter-spacing: -.01em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-color);
+    text-wrap: balance;
+}
+
+/* = .hero-subtitle (accueil) : 12px → 20px */
+.about-category {
+    margin-bottom: 12px;
+}
+
+
+/* ======================================================
+   SECTION CONTENU
+====================================================== */
+
+.about-content-section {
+    padding: 0 var(--pad-sm);
+    /* = .project-gallery (page projet) */
+    margin-bottom: clamp(60px, 10vh, 120px);
+}
+
+.about-grid {
+    display: grid;
+    /* = .project-info (page projet) */
+    gap: clamp(32px, 5vw, 80px);
+}
+
+
+/* ======================================================
+   IMAGE
+====================================================== */
+
+.about-image-block {
+    overflow: hidden;
+}
+
+.about-image-block img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+}
+
+
+/* ======================================================
+   TEXTE
+====================================================== */
+
+/* = .project-category-tag (page projet) : label jaune, capitales espacées */
+.details-title {
+    font-family: var(--font-sans);
+    font-size: clamp(0.7rem, 1vw, 0.8rem);
+    font-weight: 400;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: var(--text-color);
+
+    margin-bottom: clamp(16px, 2.5vh, 24px);
+}
+
+/* = .hero-col-right p (accueil) : filet + 16px → 30px de retrait */
+.inner-text-content {
+    border-left: 1px solid rgba(255,255,255,.2);
+    padding-left: 16px;
+}
+
+/* = .project-desc (page projet) */
+.inner-text-content p {
+    font-family: var(--font-sans);
+    font-size: var(--fs-h2);
+    font-weight: 300;
+    line-height: 1.75;
+    color: rgba(255,255,255,.85);
+    text-wrap: pretty;
+}
+
+
+/* ======================================================
+   TABLETTE
+====================================================== */
+
+@media (min-width:768px) {
+
+    .about-title-area {
+        margin-bottom: 100px;
+    }
+
+    .about-category {
+        margin-bottom: 20px;
+    }
+
+    .about-name {
+        line-height: .98;
+    }
+
+    .about-content-section {
+        padding: 0 var(--pad-md);
+    }
+
+}
+
+
+/* ======================================================
+   DESKTOP
+====================================================== */
+
+@media (min-width:1024px) {
+
+    .about-content-section {
+        padding: 0 var(--pad-lg);
+    }
+
+    .about-grid {
+
+        grid-template-columns: 1.15fr .85fr;
+
+        align-items: start;
+    }
+
+    .inner-text-content {
+        padding-left: 30px;
+    }
+
+    .about-image-block {
+
+        position: sticky;
+        top: 130px;
+    }
+
+}
+
+
+/* ======================================================
+   GRAND ECRAN
+====================================================== */
+
+@media (min-width:1280px) {
+
+    .about-grid {
+
+        grid-template-columns: 1.2fr .8fr;
+
+    }
+
+}
+/* ======================================================
+   PAGES LÉGALES (mentions-legales.html, confidentialite.html)
+   Réutilisent .about-grid / .about-text-block, mais sans bloc image :
+   on force une seule colonne pour éviter un grand vide à droite.
+====================================================== */
+.legal-grid {
+    grid-template-columns: 1fr;
+}
+
+.legal-text-block .details-title {
+    margin-top: clamp(32px, 5vw, 56px);
+}
+
+.legal-text-block .details-title:first-child {
+    margin-top: 0;
+}
+
+.legal-updated {
+    margin-top: clamp(32px, 5vw, 56px);
+    opacity: .6;
+    font-size: 0.9rem;
+}

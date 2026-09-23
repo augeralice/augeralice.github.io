@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice Auger | Portfolio</title>
+   <meta name="description" content="Alice Auger, créatrice artisanale et directrice artistique à Paris : gravure sur verre sur mesure, animations en direct et création graphique.">
+    <meta name="theme-color" content="#0a0a0a">
+ 
+    <link rel="icon" href="image/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="image/favicon-48.png" sizes="48x48" type="image/png">
+    <link rel="apple-touch-icon" href="image/apple-touch-icon.png">
+ 
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Alice Auger">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="Alice Auger | Portfolio">
+    <meta property="og:description" content="Alice Auger, créatrice artisanale et directrice artistique à Paris : gravure sur verre sur mesure, animations en direct et création graphique.">
+    <meta property="og:image" content="https://augeralice.github.io/image/og-cover.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Alice Auger — Des objets singuliers façonnés à la main">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu</a>
+    <div class="progress-bar"></div>
+    <header>
+        <div class="logo">
+            <div class="reveal-mask">
+                <a href="index.html" class="reveal-logo">
+                    <span class="logo-name">ALICE AUGER</span>
+
+                </a>
+            </div>
+        </div>
+
+        <input type="checkbox" id="burger-check">
+        <label for="burger-check" class="hamburger" aria-label="Ouvrir le menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <nav aria-label="Navigation principale">
+            <a href="apropos.html">À PROPOS</a>
+            <a href="services.html">SERVICES</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+    <!-- NOUVEAU SOUS-TITRE -->
+    <div class="hero-subtitle">
+        <span class="reveal-mask">
+            <span class="reveal-text">Création Artisanale & Direction Artistique sur mesure</span>
+          
+        </span>
+        
+    </div>
+
+    <h1 class="hero-title">
+        <span class="reveal-mask">
+            <span class="reveal-text">Des objets singuliers 
+          façonnés à la main</span>
+        </span>
+    </h1>
+            <div class="hero-details">
+                <div class="hero-col-left"></div>
+                <div class="hero-col-right">
+                    <div class="divider-line2"></div>
+                    <div class="reveal-mask">
+                        <p class="reveal-text">
+                            J'accompagne les maisons de luxe, agences et particuliers dans la création et la personnalisation d'objets
+                            d'exception&nbsp;— de la conception visuelle au geste artisanal, en atelier comme pour
+                            animer un événement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="next-label" id="portfolio">
+                <span class="txt-label" id="reveal-label">SÉLECTION</span>
+                <div class="divider-line"></div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="filter-nav">
+                <button class="filter-btn active" data-filter="all" aria-pressed="true">Tous</button>
+                <button class="filter-btn" data-filter="graphisme" aria-pressed="false">Graphisme</button>
+                <button class="filter-btn" data-filter="artisanat" aria-pressed="false">Artisanat</button>
+            </div>
+
+            <!-- Cartes générées par js/script.js depuis js/data.js (bloc `home` de chaque projet) -->
+            <div class="grid-layout"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-wrap">
+            <div class="f-col">
+                <div class="f-logo">ALICE AUGER</div>
+                <p class="f-sub">Paris, France<br>Design & Artisanat</p>
+            </div>
+            <div class="f-col">
+                <h2 class="f-title">CONTACT</h2>
+                <a href="https://instagram.com" target="_blank" rel="noopener">→ Instagram</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener">→ LinkedIn</a>
+                <a href="https://behance.net" target="_blank" rel="noopener">→ Behance</a>
+            </div>
+            <div class="f-col1">
+                <p>mail@hotmail.com</p>
+                <p>+33 6 54 88 25 44</p>
+            </div>
+        </div>
+        <div class="footer-legal">
+            <p>&copy; 2026 Alice Auger. Tous droits réservés.</p>
+            <div class="footer-legal-links">
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="confidentialite.html">Politique de confidentialité</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
